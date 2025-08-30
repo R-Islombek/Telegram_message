@@ -16,7 +16,9 @@ function App() {
       text: `Ism: ${name}\nFamiliya: ${surname}`
     })
     .then((res) => {
+      document.getElementById("myForm").reset();
       alert("Muvaffaqiyatli yuborildi ✅"); 
+  
     })
     .catch((error) => {
       console.error("Yuborishda xatolik ❌", error);
